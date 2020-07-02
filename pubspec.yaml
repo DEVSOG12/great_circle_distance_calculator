@@ -1,7 +1,7 @@
-name: great_circle_distance
+name: great_circle_distance_calculator
 description: Calculate the great-circle distance on the Earth having a pair of Latitude,Longitude points using the Spherical law of cosines, Haversine formula or Vincenty`s formula
-version: 1.0.0
-homepage: https://techbuzs.ml
+version: 1.0.3
+homepage: https://github.com/DEVSOG12/great_circle_distance_calculator
 author: Oreofe Solarin <oreofesolarin@gmail.com>
 
 environment:

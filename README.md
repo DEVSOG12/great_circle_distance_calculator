@@ -1,4 +1,4 @@
-# Great-circle distance [![Pub][pub_version]](../../) [![Coverage Status][coverage_status]][coverage_page]
+# Great-circle distance [![Pub][pub_version]](../../) ![Travis status][travis_status] [![Coverage Status][coverage_status]][coverage_page]
 
 Calculate the great-circle distance between two points (having Latitude,Longitude) on the surface of Earth 
 You can get the distance using the Spherical law of cosines, Haversine formula or Vincenty`s formula  
@@ -38,7 +38,7 @@ Check Wikipedia for detailed description on [Great-circle distance][3]
 [2]: https://en.wikipedia.org/wiki/Great-circle_distance#cite_note-1
 [3]: https://en.wikipedia.org/wiki/Great-circle_distance
 [great_circle_distance]: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Illustration_of_great-circle_distance.svg/500px-Illustration_of_great-circle_distance.svg.png
-[travis_status]: https://github.com/DEVSOG12/great_circle_distance_calculator
-[coverage_page]: https://github.com/DEVSOG12/great_circle_distance_calculator
-[coverage_status]: https://github.com/DEVSOG12/great_circle_distance_calculator
-<!-- [pub_version]: https://img.shields.io/pub/v/great_circle_distance.svg -->
+[travis_status]: https://travis-ci.org/DEVSOG12/great_circle_distance_calculator.svg?branch=master
+[coverage_page]: https://coveralls.io/github/DEVSOG12/great_circle_distance_calculator?branch=master
+[coverage_status]: https://coveralls.io/repos/github/DEVSOG12/great_circle_distance_calculator/badge.svg?branch=master
+[pub_version]: https://img.shields.io/pub/v/great_circle_distance.svg

@@ -84,15 +84,18 @@ class GreatCircleDistance {
             - Its latitude is greater than 90 degrees or less than -90 degrees.
             - Its longitude is greater than 180 degrees or less than -180 degrees.
             
-            see https://en.wikipedia.org/wiki/Decimal_degrees
+            see https://en.wikipedia.org/wiki/Decimal_degrees 
         """;
 
-    if (!_isValidCoordinate(this.latitude1, this.longitude1))
+    if (!_isValidCoordinate(this.latitude1, this.longitude1)) {
       throw new FormatException(
           "Invalid coordinates at latitude1|longitude1\n$invalidDescription");
+    }
 
-    if (!_isValidCoordinate(this.latitude2, this.longitude2))
-      throw new FormatException(
-          "Invalid coordinates at latitude2|longitude2\n$invalidDescription");
+    {
+      if (!_isValidCoordinate(this.latitude2, this.longitude2))
+        throw new FormatException(
+            "Invalid coordinates at latitude2|longitude2\n$invalidDescription");
+    }
   }
 }
