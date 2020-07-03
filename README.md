@@ -2,7 +2,7 @@
 
 Calculate the great-circle distance between two points (having Latitude,Longitude) on the surface of Earth 
 You can get the distance using the Spherical law of cosines, Haversine formula or Vincenty`s formula  
-
+## Check out the package on Pub.dev [great_circle_distance_calculator][4]
 The [great-circle distance][3] is the shortest distance between two points on the surface of a sphere
 
 ![Great-circle distance (drawn in red) between two points on a sphere][great_circle_distance]
@@ -42,3 +42,4 @@ Check Wikipedia for detailed description on [Great-circle distance][3]
 [coverage_page]: https://coveralls.io/github/DEVSOG12/great_circle_distance_calculator?branch=master
 [coverage_status]: https://coveralls.io/repos/github/DEVSOG12/great_circle_distance_calculator/badge.svg?branch=master
 [pub_version]: https://img.shields.io/pub/v/great_circle_distance.svg
+[4]: https://pub.dev/packages/great_circle_distance_calculator
