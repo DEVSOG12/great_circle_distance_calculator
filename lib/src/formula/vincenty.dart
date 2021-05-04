@@ -8,7 +8,7 @@ class Vincenty {
     double b = 6356752.3142; // WGS84 semi-major axis
     double f = (a - b) / a;
     double aSqMinusBSqOverBSq = (a * a - b * b) / (b * b);
-    double L = lon2 - lon1;
+    double? L = lon2 - lon1;
     double A = 0.0;
     double U1 = atan((1.0 - f) * tan(lat1));
     double U2 = atan((1.0 - f) * tan(lat2));
@@ -26,9 +26,9 @@ class Vincenty {
     double sinSigma = 0.0;
     double cosLambda = 0.0;
     double sinLambda = 0.0;
-    double lambda = L; // initial guess
+    double? lambda = L; // initial guess
     for (int iter = 0; iter < MAXITERS; iter++) {
-      double lambdaOrig = lambda;
+      double lambdaOrig = lambda!;
       cosLambda = cos(lambda);
       sinLambda = sin(lambda);
       double t1 = cosU2 * sinLambda;
@@ -63,7 +63,7 @@ class Vincenty {
                           cos2SM *
                           (-3.0 + 4.0 * sinSigma * sinSigma) *
                           (-3.0 + 4.0 * cos2SMSq)));
-      lambda = L +
+      lambda = L! +
           (1.0 - C) *
               f *
               sinAlpha *

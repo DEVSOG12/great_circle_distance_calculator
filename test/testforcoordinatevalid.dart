@@ -53,7 +53,7 @@ void main() {
               longitude1: lon1,
               latitude2: lat2,
               longitude2: lon2),
-          throwsA(predicate((e) =>
+          throwsA(predicate((dynamic e) =>
               e is FormatException &&
               e.message.contains("latitude1|longitude1"))));
     });
@@ -73,7 +73,7 @@ void main() {
               longitude1: lon1,
               latitude2: lat2,
               longitude2: lon2),
-          throwsA(predicate((e) =>
+          throwsA(predicate((dynamic e) =>
               e is FormatException &&
               e.message.contains("latitude2|longitude2"))));
     });
@@ -93,7 +93,7 @@ void main() {
               longitude1: lon1,
               latitude2: lat2,
               longitude2: lon2),
-          throwsA(predicate((e) =>
+          throwsA(predicate((dynamic e) =>
               e is FormatException &&
               e.message.contains("latitude2|longitude2"))));
     });
@@ -113,7 +113,7 @@ void main() {
               longitude1: lon1,
               latitude2: lat2,
               longitude2: lon2),
-          throwsA(predicate((e) =>
+          throwsA(predicate((dynamic e) =>
               e is FormatException &&
               e.message.contains("latitude2|longitude2"))));
     });
